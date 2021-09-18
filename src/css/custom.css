@@ -1,0 +1,147 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --ifm-h1-font-size: 2rem;
+  --ifm-heading-font-family: 'CircularStd', '-apple-system',
+    'BlinkMacSystemFont', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'system-ui', '-apple-system', 'BlinkMacSystemFont',
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__logo {
+  height: 100%;
+  margin-right: 0.5rem;
+  max-height: 24px;
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2rem;
+}
+
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem;
+}
+
+/* CircularStd @font-face kit */
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-Black.eot');
+  src: url('../../static/fonts/CircularStd-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-Black.woff') format('woff'),
+    url('../../static/fonts/CircularStd-Black.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-BlackItalic.eot');
+  src: url('../../static/fonts/CircularStd-BlackItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-BlackItalic.woff') format('woff'),
+    url('../../static/fonts/CircularStd-BlackItalic.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-BlackItalic.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-Bold.eot');
+  src: url('../../static/fonts/CircularStd-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-Bold.woff') format('woff'),
+    url('../../static/fonts/CircularStd-Bold.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-Bold.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-BoldItalic.eot');
+  src: url('../../static/fonts/CircularStd-BoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-BoldItalic.woff') format('woff'),
+    url('../../static/fonts/CircularStd-BoldItalic.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-BoldItalic.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-Medium.eot');
+  src: url('../../static/fonts/CircularStd-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-Medium.woff') format('woff'),
+    url('../../static/fonts/CircularStd-Medium.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-Medium.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-MediumItalic.eot');
+  src: url('../../static/fonts/CircularStd-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-MediumItalic.woff') format('woff'),
+    url('../../static/fonts/CircularStd-MediumItalic.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-MediumItalic.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-Book.eot');
+  src: url('../../static/fonts/CircularStd-Book.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-Book.woff') format('woff'),
+    url('../../static/fonts/CircularStd-Book.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../static/fonts/CircularStd-BookItalic.eot');
+  src: url('../../static/fonts/CircularStd-BookItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../static/fonts/CircularStd-BookItalic.woff') format('woff'),
+    url('../../static/fonts/CircularStd-BookItalic.ttf') format('truetype'),
+    url('../../static/fonts/CircularStd-BookItalic.svg#bcc26993292869431e54c666aafa8fcd')
+      format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
